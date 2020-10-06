@@ -16,7 +16,8 @@ menuBar = tkinter.Menu(win)
 fMenu = tkinter.Menu(menuBar)
 for item in ["新建", "打开", "保存", "另存为", "退出"]:
     fMenu.add_command(label=item)
-fMenu.add_command(label="保存", command=addLabel) #可以在这个过程中进行事件绑定
+
+fMenu.add_command(label="保存", command=addLabel)
 
 eMenu = tkinter.Menu(menuBar)
 for item in ["复制", "粘贴", "剪切", "撤销"]:
